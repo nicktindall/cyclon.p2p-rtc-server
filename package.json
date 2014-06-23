@@ -1,5 +1,5 @@
 {
-  "name": "cyclon.p2p-webrtc",
+  "name": "cyclon.p2p-webrtc-server",
   "version": "0.0.1",
   "description": "A WebRTC communications module and server for the cyclon.p2p framework",
   "keywords": [
@@ -21,6 +21,9 @@
     }
   ],
   "main": "lib/builder.js",
+  "bin": {
+    "cyclon-signalling-server" : "./start-server.sh"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/nicktindall/cyclon-webrtc.git"
