@@ -1,5 +1,6 @@
 'use strict';
 
+require("newrelic")
 var http = require("http");
 var express = require("express");
 var io = require("socket.io");
@@ -32,4 +33,3 @@ new PeerApi(app, peerNotifier);
 // Start the server
 //
 server.listen(process.env.PORT || DEFAULT_PORT);
-

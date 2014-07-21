@@ -40,6 +40,7 @@
     "body-parser": "1.4.x",
     "cyclon.p2p": "0.0.x",
     "express": "4.4.x",
+    "newrelic": "^1.8.1",
     "socket.io": "1.0.x"
   }
 }
