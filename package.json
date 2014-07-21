@@ -38,9 +38,9 @@
   "dependencies": {
     "bluebird": "2.1.x",
     "body-parser": "1.4.x",
-    "cyclon.p2p": "0.0.x",
+    "cyclon.p2p": "0.1.0",
     "express": "4.4.x",
-    "newrelic": "^1.8.1",
+    "newrelic": "1.8.x",
     "socket.io": "1.0.x"
   }
 }
