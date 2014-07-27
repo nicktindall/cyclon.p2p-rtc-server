@@ -1,6 +1,6 @@
 'use strict';
 
-//require("newrelic")
+require("newrelic")
 var http = require("http");
 var express = require("express");
 var io = require("socket.io");
