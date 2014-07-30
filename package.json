@@ -1,13 +1,14 @@
 {
-  "name": "cyclon.p2p-webrtc-server",
-  "version": "0.1.5",
-  "description": "A WebRTC communications module and server for the cyclon.p2p framework",
+  "name": "cyclon.p2p-rtc-server",
+  "version": "0.1.4",
+  "description": "A signalling server used by the WebRTC implementation of cyclon.p2p",
   "keywords": [
     "webrtc",
-    "cyclon.p2p"
+    "cyclon.p2p",
+    "signalling"
   ],
-  "homepage": "https://gitub.com/nicktindall/cyclon-webrtc/wiki",
-  "bugs": "https://github.com/nicktindall/cyclon-webrtc/issues",
+  "homepage": "https://gitub.com/nicktindall/cyclon.p2p-rtc-server/wiki",
+  "bugs": "https://github.com/nicktindall/cyclon.p2p-rtc-server/issues",
   "license": "MIT",
   "author": {
     "name": "Nick Tindall",
@@ -26,7 +27,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nicktindall/cyclon-webrtc.git"
+    "url": "https://github.com/nicktindall/cyclon.p2p-rtc-server.git"
   },
   "scripts": {
     "test": "make test"
