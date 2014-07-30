@@ -7,5 +7,5 @@ else
 	echo "Running on default port"
 fi
 
-node ./node_modules/cyclon.p2p-webrtc-server/server.js
+node ./node_modules/cyclon.p2p-rtc-server/server.js
 
