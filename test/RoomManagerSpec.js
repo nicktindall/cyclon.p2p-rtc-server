@@ -54,4 +54,17 @@ describe("The room manager", function() {
         roomManager.updateRooms(PEER_ID_ONE, [ROOM_ONE], null);
         expect(roomManager.roomExists(ROOM_ONE)).toBe(false);
     });
+
+    it("will default the limit when it is not a number", function() {
+        var lowDefaultLimitRoomManager = new RoomManager(1, 100);
+        lowDefaultLimitRoomManager.updateRooms(PEER_ID_ONE, null, [ROOM_ONE]);
+        lowDefaultLimitRoomManager.updateRooms(PEER_ID_TWO, null, [ROOM_ONE]);
+        expect(lowDefaultLimitRoomManager.samplePeers(ROOM_ONE).length).toBe(1);
+    });
+
+    it("will throw an error when no room is specified", function() {
+        expect(function() {
+            roomManager.samplePeers()
+        }).toThrow();
+    });
 });

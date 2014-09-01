@@ -34,7 +34,8 @@
   },
   "devDependencies": {
     "istanbul": "0.2.x",
-    "jasmine-node": "1.14.2"
+    "jasmine-node": "2.0.x",
+    "supertest": "0.13.x"
   },
   "dependencies": {
     "bluebird": "2.1.x",
