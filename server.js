@@ -8,27 +8,28 @@ var io = require("socket.io");
 var bodyParser = require("body-parser");
 var PeerNotifier = require("./lib/PeerNotifier");
 var peerApi = require("./lib/peerApi");
+var corsHeaders = require("./lib/corsHeaders");
+var RoomManager = require("./lib/RoomManager");
+var RegistrationManager = require("./lib/RegistrationManager");
 
+var DEFAULT_LIMIT = 10;
+var MAX_LIMIT = 50;
 var DEFAULT_PORT = 2222;
+
+var registraitionManager = new RegistrationManager();
+var roomManager = new RoomManager(DEFAULT_LIMIT, MAX_LIMIT);
 
 var app = express();
 app.use(bodyParser.json());
 
-//
 // Allow CORS for all resources
-//
-app.use(function(req, res, next) {
-	res.header("Access-Control-Allow-Origin", "*");
-	res.header("Access-Control-Allow-Headers", "Content-Type");
-	res.header("Access-Control-Max-Age", "1728000");
-	next();
-});
+app.use(corsHeaders(1728000));
 
 // Create the server
 var server = http.createServer(app);
 
 var socketio = io.listen(server);
-var peerNotifier = new PeerNotifier(socketio);
+var peerNotifier = new PeerNotifier(socketio, registraitionManager, roomManager);
 app.use("/api", peerApi.createApiForNotifier(peerNotifier));
 
 //
