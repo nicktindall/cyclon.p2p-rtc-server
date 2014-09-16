@@ -1,6 +1,6 @@
 {
   "name": "cyclon.p2p-rtc-server",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "A signalling server used by the WebRTC implementation of cyclon.p2p",
   "keywords": [
     "webrtc",
