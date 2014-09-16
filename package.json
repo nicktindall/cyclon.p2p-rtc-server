@@ -41,8 +41,7 @@
     "bluebird": "2.1.x",
     "body-parser": "1.4.x",
     "express": "4.4.x",
-    "newrelic": "1.8.x",
     "socket.io": "1.0.x",
-    "cyclon.p2p-common": "0.0.1"
+    "cyclon.p2p-common": "0.0.5"
   }
 }
