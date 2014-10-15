@@ -38,10 +38,10 @@
     "supertest": "0.13.x"
   },
   "dependencies": {
-    "bluebird": "2.1.x",
-    "body-parser": "1.4.x",
-    "express": "4.4.x",
-    "socket.io": "1.0.x",
-    "cyclon.p2p-common": "0.0.5"
+    "bluebird": "2.3.x",
+    "body-parser": "1.9.x",
+    "express": "4.9.x",
+    "socket.io": "1.1.x",
+    "cyclon.p2p-common": "0.0.6"
   }
 }
