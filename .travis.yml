@@ -1,3 +1,11 @@
 language: node_js
 node_js:
-    - "10"
+- '10'
+deploy:
+  provider: npm
+  email: nick@tindall.id.au
+  api_key:
+    secure: fAsE7MVN9dVaJVvZQbcjqQ0jKlW0k5NxD4AjC52Beeoz0OAJvHGhRAlO4+kZITvu+XVz8FkyLOD38X7z5tJz7lzf5gdjjN5fO0c2kg5dR9XSLK5MhH9CUvtnPwDP0roiz668u3JGhZko2Z7qBAVWiGO5bIGtcUzBNA2847aOmss=
+  on:
+    tags: true
+    repo: nicktindall/cyclon.p2p-rtc-server
