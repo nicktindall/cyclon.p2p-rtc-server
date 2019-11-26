@@ -27,7 +27,7 @@ app.use(corsHeaders(1728000));
 // Create the server
 var server = http.createServer(app);
 
-var socketio = io.listen(server);
+var socketio = io(server);
 var peerNotifier = new PeerNotifier(socketio, registraitionManager, roomManager);
 app.use("/api", peerApi.createApiForNotifier(peerNotifier));
 
