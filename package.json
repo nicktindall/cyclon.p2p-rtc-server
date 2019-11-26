@@ -30,11 +30,11 @@
     "url": "https://github.com/nicktindall/cyclon.p2p-rtc-server.git"
   },
   "scripts": {
-    "test": "make test"
+    "test": "nyc jasmine"
   },
   "devDependencies": {
-    "istanbul": "0.2.x",
-    "jasmine-node": "2.0.x",
+    "jasmine": "^2.99.0",
+    "nyc": "^14.1.1",
     "supertest": "0.13.x"
   },
   "dependencies": {
